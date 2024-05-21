@@ -15,6 +15,9 @@ public:
     explicit fifthpage(QWidget *parent = nullptr);
     ~fifthpage();
 
+private slots:
+    void on_pushButton_5_clicked();
+
 private:
     Ui::fifthpage *ui;
 };

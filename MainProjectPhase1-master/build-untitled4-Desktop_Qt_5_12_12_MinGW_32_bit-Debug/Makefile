@@ -247,9 +247,12 @@ Makefile: ../MainProjectPhase1-main/untitled4.pro C:/Qt/Qt5.12.12/5.12.12/mingw7
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/features/yacc.prf \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/features/lex.prf \
 		../MainProjectPhase1-main/untitled4.pro \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Quick.prl \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Widgets.prl \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Gui.prl \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Sql.prl \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Qml.prl \
+		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Network.prl \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Core.prl \
 		C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/qtmain.prl
 	$(QMAKE) -o Makefile ..\MainProjectPhase1-main\untitled4.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -437,9 +440,12 @@ C:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/features/exceptions.prf:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/features/yacc.prf:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/mkspecs/features/lex.prf:
 ../MainProjectPhase1-main/untitled4.pro:
+C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Quick.prl:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Widgets.prl:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Gui.prl:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Sql.prl:
+C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Qml.prl:
+C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Network.prl:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/Qt5Core.prl:
 C:/Qt/Qt5.12.12/5.12.12/mingw73_32/lib/qtmain.prl:
 qmake: FORCE

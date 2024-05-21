@@ -61,7 +61,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(0, 70, 301, 421));
+        groupBox->setGeometry(QRect(20, 70, 301, 421));
         groupBox->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 255);"));
         label = new QLabel(groupBox);
@@ -106,7 +106,7 @@ public:
         pushButton_4->setStyleSheet(QString::fromUtf8("font: 10pt \"Myanmar Text\";"));
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(310, 70, 301, 421));
+        groupBox_3->setGeometry(QRect(330, 70, 301, 421));
         groupBox_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "border-color: rgb(0, 0, 255);"));
         label_4 = new QLabel(groupBox_3);

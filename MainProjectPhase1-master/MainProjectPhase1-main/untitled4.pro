@@ -1,4 +1,5 @@
-QT       += core gui sql
+QT       += core gui sql \
+    quick
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,7 +14,7 @@ SOURCES += \
     forthpage.cpp \
     main.cpp \
     mainwindow.cpp \
-    secondpage.cpp \
+    secondpage.cpp \ 
     thirdpage.cpp
 
 HEADERS += \
@@ -37,11 +38,15 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     again.qrc \
+    background.qrc \
     capcha2.qrc \
     captchs.qrc \
+    iconnn.qrc \
+    icons.qrc \
     imag.qrc \
     image2.qrc \
     image3.qrc \
     image4.qrc \
+    linkdin.qrc \
     photo5.qrc \
     photo6.qrc
