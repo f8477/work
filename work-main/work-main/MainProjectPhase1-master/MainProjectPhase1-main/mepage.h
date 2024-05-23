@@ -1,0 +1,28 @@
+#ifndef MEPAGE_H
+#define MEPAGE_H
+
+#include <QDialog>
+
+namespace Ui {
+class mepage;
+}
+
+class mepage : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit mepage(QWidget *parent = nullptr);
+    ~mepage();
+
+private slots:
+
+    void on_home_clicked();
+
+    void on_job_clicked();
+
+private:
+    Ui::mepage *ui;
+};
+
+#endif // MEPAGE_H
