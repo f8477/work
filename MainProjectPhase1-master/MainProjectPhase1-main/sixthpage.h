@@ -1,26 +1,22 @@
 #ifndef SIXTHPAGE_H
 #define SIXTHPAGE_H
 
-#include <QDeclarativeItem>
-#include <QMainWindow>
-#include <QObject>
-#include <QQuickItem>
-#include <QSharedDataPointer>
-#include <QWidget>
+#include <QDialog>
 
-class sixthpageData;
+namespace Ui {
+class sixthpage;
+}
 
-class sixthpage
+class sixthpage : public QDialog
 {
     Q_OBJECT
+
 public:
-    sixthpage();
-    sixthpage(const sixthpage &);
-    sixthpage &operator=(const sixthpage &);
+    explicit sixthpage(QWidget *parent = nullptr);
     ~sixthpage();
 
 private:
-    QSharedDataPointer<sixthpageData> data;
+    Ui::sixthpage *ui;
 };
 
 #endif // SIXTHPAGE_H

@@ -3,7 +3,8 @@ release/forthpage.o
 release/main.o
 release/mainwindow.o
 release/secondpage.o
-release/thirdpage.o
+release/.o
+release/sixthpage.o
 release/qrc_again.o
 release/qrc_background.o
 release/qrc_capcha2.o
@@ -21,4 +22,5 @@ release/moc_fifthpage.o
 release/moc_forthpage.o
 release/moc_mainwindow.o
 release/moc_secondpage.o
+release/moc_sixthpage.o
 release/moc_thirdpage.o

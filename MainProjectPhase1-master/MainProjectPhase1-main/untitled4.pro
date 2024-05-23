@@ -14,7 +14,8 @@ SOURCES += \
     forthpage.cpp \
     main.cpp \
     mainwindow.cpp \
-    secondpage.cpp \ 
+    secondpage.cpp \  \
+    sixthpage.cpp
     thirdpage.cpp
 
 HEADERS += \
@@ -22,6 +23,7 @@ HEADERS += \
     forthpage.h \
     mainwindow.h \
     secondpage.h \
+    sixthpage.h \
     thirdpage.h
 
 FORMS += \
@@ -29,6 +31,7 @@ FORMS += \
     forthpage.ui \
     mainwindow.ui \
     secondpage.ui \
+    sixthpage.ui \
     thirdpage.ui
 
 # Default rules for deployment.
