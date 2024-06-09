@@ -1,6 +1,6 @@
 #include "network.h"
 #include "ui_network.h"
-#include "fifthpage.h"
+#include "home.h"
 #include "mepage.h"
 #include "jobpage.h"
 #include "messaging.h"

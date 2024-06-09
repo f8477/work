@@ -10,36 +10,39 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    fifthpage.cpp \
     forthpage.cpp \
+    home.cpp \
     jobpage.cpp \
     main.cpp \
     mainwindow.cpp \
     mepage.cpp \
     messaging.cpp \
     network.cpp \
+    postpage.cpp \
     secondpage.cpp \ 
     thirdpage.cpp
 
 HEADERS += \
-    fifthpage.h \
     forthpage.h \
+    home.h \
     jobpage.h \
     mainwindow.h \
     mepage.h \
     messaging.h \
     network.h \
+    postpage.h \
     secondpage.h \
     thirdpage.h
 
 FORMS += \
-    fifthpage.ui \
     forthpage.ui \
+    home.ui \
     jobpage.ui \
     mainwindow.ui \
     mepage.ui \
     messaging.ui \
     network.ui \
+    postpage.ui \
     secondpage.ui \
     thirdpage.ui
 

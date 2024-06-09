@@ -1,6 +1,6 @@
 #include "messaging.h"
 #include "ui_messaging.h"
-#include "fifthpage.h"
+#include "home.h"
 #include "jobpage.h"
 #include "mepage.h"
 #include "mepage.h"

@@ -1,9 +1,10 @@
-#include "ui_fifthpage.h"
-#include "fifthpage.h"
+#include "ui_home.h"
+#include "home.h"
 #include "mepage.h"
 #include "jobpage.h"
 #include "messaging.h"
 #include "network.h"
+#include "postpage.h"
 
 fifthpage::fifthpage(QWidget *parent) :
     QDialog(parent),
@@ -60,5 +61,15 @@ void fifthpage::on_network_clicked()
     w9->setWindowTitle("network");
     this->hide();
     w9->show();
+}
+
+
+void fifthpage::on_postingButton_clicked()
+{
+    PostPage *w10 = new PostPage;
+    w10->setWindowTitle("PostPage");
+    this->hide();
+    w10->show();
+
 }
 

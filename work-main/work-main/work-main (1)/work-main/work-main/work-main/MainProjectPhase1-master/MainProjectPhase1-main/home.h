@@ -1,5 +1,5 @@
-#ifndef FIFTHPAGE_H
-#define FIFTHPAGE_H
+#ifndef HOME_H
+#define HOME_H
 
 #include <QDialog>
 
@@ -25,8 +25,10 @@ private slots:
 
     void on_network_clicked();
 
+    void on_postingButton_clicked();
+
 private:
     Ui::fifthpage *ui;
 };
 
-#endif // FIFTHPAGE_H
+#endif // HOME_H

@@ -159,6 +159,26 @@
     </property>
    </widget>
   </widget>
+  <widget class="QPushButton" name="postingButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>551</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+   </property>
+   <property name="text">
+    <string>start a post!</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
