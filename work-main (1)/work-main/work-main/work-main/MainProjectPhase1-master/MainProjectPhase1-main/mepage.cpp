@@ -53,7 +53,6 @@ void mepage::on_job_clicked()
     w7->show();
 }
 
-
 void mepage::on_messaging_clicked()
 {
       messaging *w8 = new messaging;
@@ -71,12 +70,23 @@ void mepage::on_network_clicked()
     w9->show();
 }
 
-
-
-
 void mepage::on_pushButton_3_clicked()
 {
-     int x = 1 ;
 
 }
+
+void mepage::on_men_clicked()
+{
+    ui->frame->setStyleSheet("border-image: url(:/new/prefix1/men.jpg);");
+    ui->men->hide();
+    ui->women->hide();
+}
+
+void mepage::on_women_clicked()
+{
+    ui->frame->setStyleSheet("border-image: url(:/new/prefix1/women.jpg);");
+    ui->men->hide();
+    ui->women->hide();
+}
+
 

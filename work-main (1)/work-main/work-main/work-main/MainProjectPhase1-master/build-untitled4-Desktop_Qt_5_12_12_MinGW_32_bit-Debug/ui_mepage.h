@@ -12,11 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTableView>
 
 QT_BEGIN_NAMESPACE
 
@@ -33,11 +32,15 @@ public:
     QPushButton *messaging;
     QPushButton *pushButton_3;
     QPushButton *pushButton_2;
-    QTableView *tableView;
-    QTableView *tableView_2;
-    QTableView *tableView_3;
-    QTableView *tableView_4;
     QPushButton *pushButton_4;
+    QPushButton *men;
+    QPushButton *women;
+    QFrame *frame;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit_3;
+    QLineEdit *lineEdit_4;
+    QLineEdit *lineEdit_5;
+    QPushButton *pushButton_5;
 
     void setupUi(QDialog *mepage)
     {
@@ -85,25 +88,45 @@ public:
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(670, 70, 441, 581));
         pushButton_2->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/back3.jpg);"));
-        tableView = new QTableView(mepage);
-        tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(70, 110, 131, 151));
-        tableView_2 = new QTableView(mepage);
-        tableView_2->setObjectName(QString::fromUtf8("tableView_2"));
-        tableView_2->setGeometry(QRect(70, 280, 256, 51));
-        tableView_3 = new QTableView(mepage);
-        tableView_3->setObjectName(QString::fromUtf8("tableView_3"));
-        tableView_3->setGeometry(QRect(70, 360, 256, 51));
-        tableView_4 = new QTableView(mepage);
-        tableView_4->setObjectName(QString::fromUtf8("tableView_4"));
-        tableView_4->setGeometry(QRect(70, 420, 256, 51));
         pushButton_4 = new QPushButton(mepage);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(120, 557, 171, 61));
+        pushButton_4->setGeometry(QRect(100, 570, 171, 61));
         pushButton_4->setStyleSheet(QString::fromUtf8("font: 12pt \"MS Sans Serif\";\n"
 "border-color: rgb(180, 180, 200);"));
+        men = new QPushButton(mepage);
+        men->setObjectName(QString::fromUtf8("men"));
+        men->setGeometry(QRect(60, 90, 61, 61));
+        women = new QPushButton(mepage);
+        women->setObjectName(QString::fromUtf8("women"));
+        women->setGeometry(QRect(130, 90, 61, 61));
+        frame = new QFrame(mepage);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setGeometry(QRect(80, 170, 111, 101));
+        frame->setStyleSheet(QString::fromUtf8(""));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        lineEdit_2 = new QLineEdit(mepage);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(70, 280, 261, 51));
+        lineEdit_3 = new QLineEdit(mepage);
+        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        lineEdit_3->setGeometry(QRect(70, 340, 261, 51));
+        lineEdit_4 = new QLineEdit(mepage);
+        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
+        lineEdit_4->setGeometry(QRect(70, 400, 261, 51));
+        lineEdit_5 = new QLineEdit(mepage);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setGeometry(QRect(70, 460, 261, 71));
+        pushButton_5 = new QPushButton(mepage);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(450, 580, 93, 61));
+        pushButton_5->setStyleSheet(QString::fromUtf8("font: 10pt \"MS Sans Serif\";"));
 
         retranslateUi(mepage);
+        QObject::connect(men, SIGNAL(clicked()), men, SLOT(hide()));
+        QObject::connect(men, SIGNAL(clicked()), women, SLOT(hide()));
+        QObject::connect(women, SIGNAL(clicked()), mepage, SLOT(hide()));
+        QObject::connect(women, SIGNAL(clicked()), men, SLOT(hide()));
 
         QMetaObject::connectSlotsByName(mepage);
     } // setupUi
@@ -119,9 +142,16 @@ public:
         me->setText(QString());
         home->setText(QString());
         messaging->setText(QString());
-        pushButton_3->setText(QApplication::translate("mepage", "..", nullptr));
+        pushButton_3->setText(QString());
         pushButton_2->setText(QString());
         pushButton_4->setText(QApplication::translate("mepage", "start a company", nullptr));
+        men->setText(QApplication::translate("mepage", "men", nullptr));
+        women->setText(QApplication::translate("mepage", "women", nullptr));
+        lineEdit_2->setPlaceholderText(QApplication::translate("mepage", " name & last name", nullptr));
+        lineEdit_3->setPlaceholderText(QApplication::translate("mepage", " skills ...", nullptr));
+        lineEdit_4->setPlaceholderText(QApplication::translate("mepage", " email", nullptr));
+        lineEdit_5->setPlaceholderText(QApplication::translate("mepage", " Bio ", nullptr));
+        pushButton_5->setText(QApplication::translate("mepage", "Done", nullptr));
     } // retranslateUi
 
 };

@@ -15,6 +15,7 @@ release/qrc_background.o
 release/qrc_blackback.o
 release/qrc_capcha2.o
 release/qrc_captchs.o
+release/qrc_darkmood.o
 release/qrc_iconnn.o
 release/qrc_icons.o
 release/qrc_imag.o
@@ -22,6 +23,7 @@ release/qrc_image2.o
 release/qrc_image3.o
 release/qrc_image4.o
 release/qrc_linkdin.o
+release/qrc_menwomen.o
 release/qrc_photo5.o
 release/qrc_photo6.o
 release/qrc_pictureicons.o

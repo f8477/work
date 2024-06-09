@@ -27,6 +27,12 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+
+    void on_men_clicked();
+
+    void on_women_clicked();
+
+
 private:
     Ui::mepage *ui;
 };

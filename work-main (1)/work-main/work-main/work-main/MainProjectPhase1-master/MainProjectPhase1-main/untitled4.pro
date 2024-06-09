@@ -56,6 +56,7 @@ RESOURCES += \
     blackback.qrc \
     capcha2.qrc \
     captchs.qrc \
+    darkmood.qrc \
     iconnn.qrc \
     icons.qrc \
     icons.qrc \
@@ -64,6 +65,7 @@ RESOURCES += \
     image3.qrc \
     image4.qrc \
     linkdin.qrc \
+    menwomen.qrc \
     photo5.qrc \
     photo6.qrc \
     pictureicons.qrc

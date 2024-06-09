@@ -15,6 +15,7 @@ debug/qrc_background.o
 debug/qrc_blackback.o
 debug/qrc_capcha2.o
 debug/qrc_captchs.o
+debug/qrc_darkmood.o
 debug/qrc_iconnn.o
 debug/qrc_icons.o
 debug/qrc_imag.o
@@ -22,6 +23,7 @@ debug/qrc_image2.o
 debug/qrc_image3.o
 debug/qrc_image4.o
 debug/qrc_linkdin.o
+debug/qrc_menwomen.o
 debug/qrc_photo5.o
 debug/qrc_photo6.o
 debug/qrc_pictureicons.o
