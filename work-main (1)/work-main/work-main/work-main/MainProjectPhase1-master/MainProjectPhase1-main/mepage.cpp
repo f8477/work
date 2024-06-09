@@ -90,3 +90,13 @@ void mepage::on_women_clicked()
 }
 
 
+
+void mepage::on_pushButton_5_clicked()
+{
+    ui->lineEdit_2->setEnabled(false);
+    ui->lineEdit_3->setEnabled(false);
+    ui->lineEdit_4->setEnabled(false);
+    ui->lineEdit_5->setEnabled(false);
+
+}
+
