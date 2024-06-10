@@ -53,7 +53,7 @@ void network::on_messaging_clicked()
 
 void network::on_me_clicked()
 {
-    mepage *w6 = new mepage;
+    MePage *w6 = new MePage;
     w6->setWindowTitle("mepage");
     this->hide();
     w6->show();

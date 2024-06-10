@@ -36,7 +36,7 @@ void jobpage::on_home_clicked()
 
 void jobpage::on_me_clicked()
 {
-    mepage *w6 = new mepage;
+    MePage *w6 = new MePage;
     w6->setWindowTitle("mepage");
     this->hide();
     w6->show();

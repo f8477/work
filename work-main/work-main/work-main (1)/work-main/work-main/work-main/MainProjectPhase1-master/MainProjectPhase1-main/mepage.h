@@ -1,39 +1,42 @@
 #ifndef MEPAGE_H
 #define MEPAGE_H
 
-#include <QMainWindow>
-#include <QLabel>
-#include <QPushButton>
+#include <QWidget>
+#include <QSqlDatabase>
+#include <QSqlQuery>
 #include <QFileDialog>
-#include <QVBoxLayout>
 
 namespace Ui {
-class mepage;
+class MePage;
 }
 
-class mepage : public QMainWindow
+class MePage : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit mepage(QWidget *parent = nullptr);
-    ~mepage();
+    explicit MePage(QWidget *parent = nullptr);
+    ~MePage();
+
+protected:
+    void showEvent(QShowEvent *event) override;
+
 private slots:
-    void on_uploadPushButton_clicked();
-
-    void on_donePushButton_clicked();
-
+    void onOkButtonClicked();
+    void onUploadButtonClicked();
     void on_home_clicked();
-
     void on_network_clicked();
-
     void on_job_clicked();
-
     void on_messaging_clicked();
 
+
 private:
-    Ui::mepage *ui;
-    QLabel *profilePictureLabel;
+    Ui::MePage *ui;
+    QSqlDatabase db;
+
+    void initializeDatabase();
+    void loadUserData();
+    void saveUserData();
 };
 
 #endif // MEPAGE_H
