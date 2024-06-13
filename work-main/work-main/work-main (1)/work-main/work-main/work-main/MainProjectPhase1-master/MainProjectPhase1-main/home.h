@@ -27,6 +27,8 @@ private slots:
 
     void on_postingButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::fifthpage *ui;
 };

@@ -73,3 +73,9 @@ void fifthpage::on_postingButton_clicked()
 
 }
 
+
+void fifthpage::on_pushButton_2_clicked()
+{
+
+}
+
