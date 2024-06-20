@@ -159,19 +159,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QCommandLinkButton" name="commandLinkButton">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>320</y>
-     <width>187</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CommandLinkButton</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
