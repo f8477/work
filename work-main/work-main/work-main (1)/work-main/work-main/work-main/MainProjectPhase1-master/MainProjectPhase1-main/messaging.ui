@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>messaging</class>
- <widget class="QDialog" name="messaging">
+ <class>Messaging</class>
+ <widget class="QWidget" name="Messaging">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1113</width>
-    <height>652</height>
+    <width>1116</width>
+    <height>590</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
-  </property>
-  <property name="styleSheet">
-   <string notr="true">background-image: url(:/new/prefix1/back2.jpg);</string>
+   <string>Form</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -31,7 +28,7 @@
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>10</y>
       <width>71</width>
       <height>51</height>
@@ -139,7 +136,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="messaging_2">
+   <widget class="QPushButton" name="messaging">
     <property name="geometry">
      <rect>
       <x>750</x>
@@ -158,6 +155,68 @@
      <bool>true</bool>
     </property>
    </widget>
+  </widget>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>551</width>
+     <height>361</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="messageLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>450</y>
+     <width>551</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sendButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>510</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>done</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="uploadButton">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>510</y>
+     <width>80</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>photo</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelChatWith">
+   <property name="geometry">
+    <rect>
+     <x>144</x>
+     <y>90</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
   </widget>
  </widget>
  <resources/>

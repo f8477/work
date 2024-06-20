@@ -45,8 +45,9 @@ void jobpage::on_me_clicked()
 
 void jobpage::on_messaging_clicked()
 {
-    messaging *w8 = new messaging;
-    w8->setWindowTitle("messaging");
+    QString currentUser = "user1";
+    QString chatWithUser = "user2";
+    Messaging *w8 = new Messaging(currentUser,chatWithUser);
     this->hide();
     w8->show();
 }

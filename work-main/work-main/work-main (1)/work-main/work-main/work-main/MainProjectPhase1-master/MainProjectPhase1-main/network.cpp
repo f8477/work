@@ -44,7 +44,9 @@ void network::on_job_clicked()
 
 void network::on_messaging_clicked()
 {
-    messaging *w8 = new messaging;
+    QString currentUser = "user1";
+    QString chatWithUser = "user2";
+    Messaging *w8 = new Messaging(currentUser,chatWithUser);
     w8->setWindowTitle("messaging");
     this->hide();
     w8->show();

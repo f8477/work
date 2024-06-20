@@ -151,7 +151,9 @@ void MePage::on_job_clicked()
 
 void MePage::on_messaging_clicked()
 {
-    messaging *w8 = new messaging;
+    QString currentUser = "user1";
+    QString chatWithUser = "user2";
+    Messaging *w8 = new Messaging(currentUser,chatWithUser,this);
     w8->setWindowTitle("messaging");
     this->hide();
     w8->show();

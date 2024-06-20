@@ -6,6 +6,8 @@
 #include "network.h"
 #include "postpage.h"
 
+#include <QDebug>
+
 fifthpage::fifthpage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::fifthpage)
@@ -48,10 +50,14 @@ void fifthpage::on_job_clicked()
 
 void fifthpage::on_messaging_clicked()
 {
-    messaging *w8 = new messaging;
+    QString currentUser = "user1";
+    QString chatWithUser = "user2";
+    Messaging *w8 = new Messaging(currentUser, chatWithUser);
     w8->setWindowTitle("messaging");
     this->hide();
     w8->show();
+    qDebug() << "opened Messaging window";
+
 }
 
 
