@@ -209,7 +209,7 @@ border-color: rgb(180, 180, 200);</string>
   <widget class="QPushButton" name="women">
    <property name="geometry">
     <rect>
-     <x>170</x>
+     <x>150</x>
      <y>90</y>
      <width>61</width>
      <height>61</height>
