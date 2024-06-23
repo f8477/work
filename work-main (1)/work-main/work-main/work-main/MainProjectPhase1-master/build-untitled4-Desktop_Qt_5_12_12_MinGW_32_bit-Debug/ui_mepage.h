@@ -82,11 +82,11 @@ public:
         messaging->setStyleSheet(QString::fromUtf8(""));
         pushButton_3 = new QPushButton(groupBox);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(890, 10, 41, 41));
-        pushButton_3->setStyleSheet(QString::fromUtf8(""));
+        pushButton_3->setGeometry(QRect(910, 20, 41, 41));
+        pushButton_3->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/Dark-Mode.png);"));
         pushButton_2 = new QPushButton(mepage);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(670, 70, 441, 581));
+        pushButton_2->setGeometry(QRect(730, 70, 361, 581));
         pushButton_2->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/back3.jpg);"));
         pushButton_4 = new QPushButton(mepage);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
@@ -98,7 +98,7 @@ public:
         men->setGeometry(QRect(60, 90, 61, 61));
         women = new QPushButton(mepage);
         women->setObjectName(QString::fromUtf8("women"));
-        women->setGeometry(QRect(130, 90, 61, 61));
+        women->setGeometry(QRect(190, 90, 61, 61));
         frame = new QFrame(mepage);
         frame->setObjectName(QString::fromUtf8("frame"));
         frame->setGeometry(QRect(80, 170, 111, 101));
@@ -119,7 +119,7 @@ public:
         lineEdit_5->setGeometry(QRect(70, 460, 261, 71));
         pushButton_5 = new QPushButton(mepage);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(450, 580, 93, 61));
+        pushButton_5->setGeometry(QRect(450, 570, 93, 61));
         pushButton_5->setStyleSheet(QString::fromUtf8("font: 10pt \"MS Sans Serif\";"));
 
         retranslateUi(mepage);
