@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLineEdit>
@@ -29,6 +30,8 @@ public:
     QPushButton *job;
     QPushButton *me;
     QPushButton *messaging;
+    QCheckBox *checkBox;
+    QGroupBox *groupBox_2;
 
     void setupUi(QDialog *jobpage)
     {
@@ -69,6 +72,12 @@ public:
         messaging->setObjectName(QString::fromUtf8("messaging"));
         messaging->setGeometry(QRect(750, 10, 71, 51));
         messaging->setStyleSheet(QString::fromUtf8(""));
+        checkBox = new QCheckBox(jobpage);
+        checkBox->setObjectName(QString::fromUtf8("checkBox"));
+        checkBox->setGeometry(QRect(50, 110, 93, 26));
+        groupBox_2 = new QGroupBox(jobpage);
+        groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
+        groupBox_2->setGeometry(QRect(50, 150, 120, 80));
 
         retranslateUi(jobpage);
 
@@ -92,6 +101,8 @@ public:
         job->setText(QString());
         me->setText(QString());
         messaging->setText(QString());
+        checkBox->setText(QApplication::translate("jobpage", "CheckBox", nullptr));
+        groupBox_2->setTitle(QApplication::translate("jobpage", "GroupBox", nullptr));
     } // retranslateUi
 
 };

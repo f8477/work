@@ -11,97 +11,49 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_mepage
+class Ui_MePage
 {
 public:
-    QWidget *centralwidget;
-    QLineEdit *usernameLine;
-    QLineEdit *skillLine;
-    QPushButton *uploadPushButton;
-    QPushButton *donePushButton;
-    QLineEdit *skillLine_2;
-    QLabel *usernameLabel;
-    QLabel *skillsLabel;
-    QLabel *label;
-    QPushButton *pushButton;
-    QFrame *profilePic;
     QGroupBox *groupBox;
-    QPushButton *pushButton_2;
+    QPushButton *pushButton;
     QLineEdit *lineEdit;
     QPushButton *home;
     QPushButton *network;
     QPushButton *job;
     QPushButton *me;
     QPushButton *messaging_2;
-    QStatusBar *statusbar;
+    QLineEdit *lineEditUsername;
+    QLineEdit *lineEditSkills;
+    QLabel *usernameLabel;
+    QLabel *skillLine;
+    QLabel *labelBio;
+    QTextEdit *textEditBio;
+    QPushButton *companPushButton;
+    QLabel *labelProfilePicture;
+    QPushButton *uploadButton;
+    QPushButton *okButton;
 
-    void setupUi(QMainWindow *mepage)
+    void setupUi(QWidget *MePage)
     {
-        if (mepage->objectName().isEmpty())
-            mepage->setObjectName(QString::fromUtf8("mepage"));
-        mepage->resize(1142, 600);
-        centralwidget = new QWidget(mepage);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        usernameLine = new QLineEdit(centralwidget);
-        usernameLine->setObjectName(QString::fromUtf8("usernameLine"));
-        usernameLine->setGeometry(QRect(170, 210, 251, 71));
-        usernameLine->setFrame(true);
-        skillLine = new QLineEdit(centralwidget);
-        skillLine->setObjectName(QString::fromUtf8("skillLine"));
-        skillLine->setGeometry(QRect(170, 130, 251, 71));
-        uploadPushButton = new QPushButton(centralwidget);
-        uploadPushButton->setObjectName(QString::fromUtf8("uploadPushButton"));
-        uploadPushButton->setGeometry(QRect(840, 240, 201, 21));
-        donePushButton = new QPushButton(centralwidget);
-        donePushButton->setObjectName(QString::fromUtf8("donePushButton"));
-        donePushButton->setGeometry(QRect(900, 270, 80, 25));
-        skillLine_2 = new QLineEdit(centralwidget);
-        skillLine_2->setObjectName(QString::fromUtf8("skillLine_2"));
-        skillLine_2->setGeometry(QRect(170, 290, 301, 151));
-        usernameLabel = new QLabel(centralwidget);
-        usernameLabel->setObjectName(QString::fromUtf8("usernameLabel"));
-        usernameLabel->setGeometry(QRect(20, 140, 141, 51));
-        usernameLabel->setStyleSheet(QString::fromUtf8("font: 18pt \"MS Shell Dlg 2\";\n"
-"color: rgb(0, 0, 0);"));
-        skillsLabel = new QLabel(centralwidget);
-        skillsLabel->setObjectName(QString::fromUtf8("skillsLabel"));
-        skillsLabel->setGeometry(QRect(20, 220, 111, 51));
-        skillsLabel->setStyleSheet(QString::fromUtf8("font: 18pt \"MS Shell Dlg 2\";\n"
-"color: rgb(0, 0, 0);"));
-        label = new QLabel(centralwidget);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(20, 340, 81, 51));
-        label->setStyleSheet(QString::fromUtf8("font: 18pt \"MS Shell Dlg 2\";\n"
-"color: rgb(0, 0, 0);"));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(170, 450, 281, 25));
-        pushButton->setStyleSheet(QString::fromUtf8("font: 10pt \"MS Shell Dlg 2\";\n"
-"background-color: rgb(255, 255, 255);\n"
-"color: rgb(0, 0, 0);"));
-        profilePic = new QFrame(centralwidget);
-        profilePic->setObjectName(QString::fromUtf8("profilePic"));
-        profilePic->setGeometry(QRect(860, 90, 161, 141));
-        profilePic->setFrameShape(QFrame::Box);
-        profilePic->setFrameShadow(QFrame::Raised);
-        groupBox = new QGroupBox(centralwidget);
+        if (MePage->objectName().isEmpty())
+            MePage->setObjectName(QString::fromUtf8("MePage"));
+        MePage->resize(1115, 643);
+        groupBox = new QGroupBox(MePage);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(10, 0, 1111, 71));
-        pushButton_2 = new QPushButton(groupBox);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(20, 10, 71, 51));
-        pushButton_2->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/linkdin.jpg);"));
+        groupBox->setGeometry(QRect(0, 0, 1111, 71));
+        pushButton = new QPushButton(groupBox);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(10, 10, 71, 51));
+        pushButton->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/linkdin.jpg);"));
         lineEdit = new QLineEdit(groupBox);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
         lineEdit->setGeometry(QRect(100, 10, 371, 41));
@@ -128,12 +80,45 @@ public:
         messaging_2->setObjectName(QString::fromUtf8("messaging_2"));
         messaging_2->setGeometry(QRect(750, 10, 71, 51));
         messaging_2->setStyleSheet(QString::fromUtf8(""));
-        mepage->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(mepage);
-        statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        mepage->setStatusBar(statusbar);
+        lineEditUsername = new QLineEdit(MePage);
+        lineEditUsername->setObjectName(QString::fromUtf8("lineEditUsername"));
+        lineEditUsername->setGeometry(QRect(140, 110, 271, 51));
+        lineEditSkills = new QLineEdit(MePage);
+        lineEditSkills->setObjectName(QString::fromUtf8("lineEditSkills"));
+        lineEditSkills->setGeometry(QRect(140, 170, 271, 51));
+        usernameLabel = new QLabel(MePage);
+        usernameLabel->setObjectName(QString::fromUtf8("usernameLabel"));
+        usernameLabel->setGeometry(QRect(20, 110, 111, 41));
+        usernameLabel->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"font: 14pt \"MS Shell Dlg 2\";"));
+        skillLine = new QLabel(MePage);
+        skillLine->setObjectName(QString::fromUtf8("skillLine"));
+        skillLine->setGeometry(QRect(20, 180, 111, 41));
+        skillLine->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"font: 14pt \"MS Shell Dlg 2\";"));
+        labelBio = new QLabel(MePage);
+        labelBio->setObjectName(QString::fromUtf8("labelBio"));
+        labelBio->setGeometry(QRect(20, 280, 111, 41));
+        labelBio->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
+"font: 14pt \"MS Shell Dlg 2\";"));
+        textEditBio = new QTextEdit(MePage);
+        textEditBio->setObjectName(QString::fromUtf8("textEditBio"));
+        textEditBio->setGeometry(QRect(140, 230, 271, 171));
+        companPushButton = new QPushButton(MePage);
+        companPushButton->setObjectName(QString::fromUtf8("companPushButton"));
+        companPushButton->setGeometry(QRect(140, 410, 271, 25));
+        labelProfilePicture = new QLabel(MePage);
+        labelProfilePicture->setObjectName(QString::fromUtf8("labelProfilePicture"));
+        labelProfilePicture->setGeometry(QRect(764, 120, 171, 161));
+        labelProfilePicture->setFrameShape(QFrame::Box);
+        uploadButton = new QPushButton(MePage);
+        uploadButton->setObjectName(QString::fromUtf8("uploadButton"));
+        uploadButton->setGeometry(QRect(770, 290, 161, 25));
+        okButton = new QPushButton(MePage);
+        okButton->setObjectName(QString::fromUtf8("okButton"));
+        okButton->setGeometry(QRect(810, 320, 80, 25));
 
-        retranslateUi(mepage);
+        retranslateUi(MePage);
 
         home->setDefault(true);
         network->setDefault(true);
@@ -141,32 +126,33 @@ public:
         messaging_2->setDefault(true);
 
 
-        QMetaObject::connectSlotsByName(mepage);
+        QMetaObject::connectSlotsByName(MePage);
     } // setupUi
 
-    void retranslateUi(QMainWindow *mepage)
+    void retranslateUi(QWidget *MePage)
     {
-        mepage->setWindowTitle(QApplication::translate("mepage", "MainWindow", nullptr));
-        uploadPushButton->setText(QApplication::translate("mepage", "UPLOAD PFP", nullptr));
-        donePushButton->setText(QApplication::translate("mepage", "Done", nullptr));
-        usernameLabel->setText(QApplication::translate("mepage", "username:", nullptr));
-        skillsLabel->setText(QApplication::translate("mepage", "skills:", nullptr));
-        label->setText(QApplication::translate("mepage", "Bio:", nullptr));
-        pushButton->setText(QApplication::translate("mepage", "company", nullptr));
+        MePage->setWindowTitle(QApplication::translate("MePage", "Form", nullptr));
         groupBox->setTitle(QString());
-        pushButton_2->setText(QString());
-        lineEdit->setPlaceholderText(QApplication::translate("mepage", " search....", nullptr));
+        pushButton->setText(QString());
+        lineEdit->setPlaceholderText(QApplication::translate("MePage", " search....", nullptr));
         home->setText(QString());
         network->setText(QString());
         job->setText(QString());
         me->setText(QString());
         messaging_2->setText(QString());
+        usernameLabel->setText(QApplication::translate("MePage", "userName:", nullptr));
+        skillLine->setText(QApplication::translate("MePage", "skills:", nullptr));
+        labelBio->setText(QApplication::translate("MePage", "Bio:", nullptr));
+        companPushButton->setText(QApplication::translate("MePage", "start company", nullptr));
+        labelProfilePicture->setText(QString());
+        uploadButton->setText(QApplication::translate("MePage", "upload pfp", nullptr));
+        okButton->setText(QApplication::translate("MePage", "done", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class mepage: public Ui_mepage {};
+    class MePage: public Ui_MePage {};
 } // namespace Ui
 
 QT_END_NAMESPACE

@@ -20,35 +20,35 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_mepage_t {
+struct qt_meta_stringdata_MePage_t {
     QByteArrayData data[8];
-    char stringdata0[133];
+    char stringdata0[119];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_mepage_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MePage_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_mepage_t qt_meta_stringdata_mepage = {
+static const qt_meta_stringdata_MePage_t qt_meta_stringdata_MePage = {
     {
-QT_MOC_LITERAL(0, 0, 6), // "mepage"
-QT_MOC_LITERAL(1, 7, 27), // "on_uploadPushButton_clicked"
-QT_MOC_LITERAL(2, 35, 0), // ""
-QT_MOC_LITERAL(3, 36, 25), // "on_donePushButton_clicked"
-QT_MOC_LITERAL(4, 62, 15), // "on_home_clicked"
-QT_MOC_LITERAL(5, 78, 18), // "on_network_clicked"
-QT_MOC_LITERAL(6, 97, 14), // "on_job_clicked"
-QT_MOC_LITERAL(7, 112, 20) // "on_messaging_clicked"
+QT_MOC_LITERAL(0, 0, 6), // "MePage"
+QT_MOC_LITERAL(1, 7, 17), // "onOkButtonClicked"
+QT_MOC_LITERAL(2, 25, 0), // ""
+QT_MOC_LITERAL(3, 26, 21), // "onUploadButtonClicked"
+QT_MOC_LITERAL(4, 48, 15), // "on_home_clicked"
+QT_MOC_LITERAL(5, 64, 18), // "on_network_clicked"
+QT_MOC_LITERAL(6, 83, 14), // "on_job_clicked"
+QT_MOC_LITERAL(7, 98, 20) // "on_messaging_clicked"
 
     },
-    "mepage\0on_uploadPushButton_clicked\0\0"
-    "on_donePushButton_clicked\0on_home_clicked\0"
+    "MePage\0onOkButtonClicked\0\0"
+    "onUploadButtonClicked\0on_home_clicked\0"
     "on_network_clicked\0on_job_clicked\0"
     "on_messaging_clicked"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_mepage[] = {
+static const uint qt_meta_data_MePage[] = {
 
  // content:
        8,       // revision
@@ -80,14 +80,14 @@ static const uint qt_meta_data_mepage[] = {
        0        // eod
 };
 
-void mepage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void MePage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<mepage *>(_o);
+        auto *_t = static_cast<MePage *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_uploadPushButton_clicked(); break;
-        case 1: _t->on_donePushButton_clicked(); break;
+        case 0: _t->onOkButtonClicked(); break;
+        case 1: _t->onUploadButtonClicked(); break;
         case 2: _t->on_home_clicked(); break;
         case 3: _t->on_network_clicked(); break;
         case 4: _t->on_job_clicked(); break;
@@ -98,32 +98,32 @@ void mepage::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     Q_UNUSED(_a);
 }
 
-QT_INIT_METAOBJECT const QMetaObject mepage::staticMetaObject = { {
-    &QMainWindow::staticMetaObject,
-    qt_meta_stringdata_mepage.data,
-    qt_meta_data_mepage,
+QT_INIT_METAOBJECT const QMetaObject MePage::staticMetaObject = { {
+    &QWidget::staticMetaObject,
+    qt_meta_stringdata_MePage.data,
+    qt_meta_data_MePage,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *mepage::metaObject() const
+const QMetaObject *MePage::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *mepage::qt_metacast(const char *_clname)
+void *MePage::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_mepage.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_MePage.stringdata0))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
-int mepage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MePage::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {

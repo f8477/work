@@ -11,14 +11,16 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QDialog>
 #include <QtWidgets/QGroupBox>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_messaging
+class Ui_Messaging
 {
 public:
     QGroupBox *groupBox;
@@ -28,20 +30,24 @@ public:
     QPushButton *network;
     QPushButton *job;
     QPushButton *me;
-    QPushButton *messaging_2;
+    QPushButton *messaging;
+    QTextBrowser *textBrowser;
+    QLineEdit *messageLineEdit;
+    QPushButton *sendButton;
+    QPushButton *uploadButton;
+    QLabel *labelChatWith;
 
-    void setupUi(QDialog *messaging)
+    void setupUi(QWidget *Messaging)
     {
-        if (messaging->objectName().isEmpty())
-            messaging->setObjectName(QString::fromUtf8("messaging"));
-        messaging->resize(1113, 652);
-        messaging->setStyleSheet(QString::fromUtf8("background-image: url(:/new/prefix1/back2.jpg);"));
-        groupBox = new QGroupBox(messaging);
+        if (Messaging->objectName().isEmpty())
+            Messaging->setObjectName(QString::fromUtf8("Messaging"));
+        Messaging->resize(1116, 590);
+        groupBox = new QGroupBox(Messaging);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         groupBox->setGeometry(QRect(0, 0, 1111, 71));
         pushButton = new QPushButton(groupBox);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(10, 10, 71, 51));
+        pushButton->setGeometry(QRect(20, 10, 71, 51));
         pushButton->setStyleSheet(QString::fromUtf8("border-image: url(:/new/prefix1/linkdin.jpg);"));
         lineEdit = new QLineEdit(groupBox);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
@@ -65,39 +71,58 @@ public:
         me->setObjectName(QString::fromUtf8("me"));
         me->setGeometry(QRect(980, 10, 71, 51));
         me->setStyleSheet(QString::fromUtf8(""));
-        messaging_2 = new QPushButton(groupBox);
-        messaging_2->setObjectName(QString::fromUtf8("messaging_2"));
-        messaging_2->setGeometry(QRect(750, 10, 71, 51));
-        messaging_2->setStyleSheet(QString::fromUtf8(""));
+        messaging = new QPushButton(groupBox);
+        messaging->setObjectName(QString::fromUtf8("messaging"));
+        messaging->setGeometry(QRect(750, 10, 71, 51));
+        messaging->setStyleSheet(QString::fromUtf8(""));
+        textBrowser = new QTextBrowser(Messaging);
+        textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setGeometry(QRect(270, 90, 551, 361));
+        messageLineEdit = new QLineEdit(Messaging);
+        messageLineEdit->setObjectName(QString::fromUtf8("messageLineEdit"));
+        messageLineEdit->setGeometry(QRect(270, 450, 551, 51));
+        sendButton = new QPushButton(Messaging);
+        sendButton->setObjectName(QString::fromUtf8("sendButton"));
+        sendButton->setGeometry(QRect(270, 510, 80, 25));
+        uploadButton = new QPushButton(Messaging);
+        uploadButton->setObjectName(QString::fromUtf8("uploadButton"));
+        uploadButton->setGeometry(QRect(370, 510, 80, 25));
+        labelChatWith = new QLabel(Messaging);
+        labelChatWith->setObjectName(QString::fromUtf8("labelChatWith"));
+        labelChatWith->setGeometry(QRect(144, 90, 101, 20));
+        labelChatWith->setFrameShape(QFrame::Box);
 
-        retranslateUi(messaging);
+        retranslateUi(Messaging);
 
         home->setDefault(true);
         network->setDefault(true);
         job->setDefault(true);
-        messaging_2->setDefault(true);
+        messaging->setDefault(true);
 
 
-        QMetaObject::connectSlotsByName(messaging);
+        QMetaObject::connectSlotsByName(Messaging);
     } // setupUi
 
-    void retranslateUi(QDialog *messaging)
+    void retranslateUi(QWidget *Messaging)
     {
-        messaging->setWindowTitle(QApplication::translate("messaging", "Dialog", nullptr));
+        Messaging->setWindowTitle(QApplication::translate("Messaging", "Form", nullptr));
         groupBox->setTitle(QString());
         pushButton->setText(QString());
-        lineEdit->setPlaceholderText(QApplication::translate("messaging", " search....", nullptr));
+        lineEdit->setPlaceholderText(QApplication::translate("Messaging", " search....", nullptr));
         home->setText(QString());
         network->setText(QString());
         job->setText(QString());
         me->setText(QString());
-        messaging_2->setText(QString());
+        messaging->setText(QString());
+        sendButton->setText(QApplication::translate("Messaging", "done", nullptr));
+        uploadButton->setText(QApplication::translate("Messaging", "photo", nullptr));
+        labelChatWith->setText(QString());
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class messaging: public Ui_messaging {};
+    class Messaging: public Ui_Messaging {};
 } // namespace Ui
 
 QT_END_NAMESPACE
